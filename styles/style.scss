@@ -2,3 +2,68 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    .container {
+        .row {
+            .navbar {
+                .navbar-brand {
+                    color: rgba(0, 0, 0, .9);
+                    font-size: 22px;
+                    font-weight: 500;
+                }
+                .navbar-toggler {
+                    .navbar-toggler-icon {}
+                }
+                .collapse {
+                    text-align: center;
+                    .navbar-nav {
+                        margin: 0 100px;
+                        text-align: center;
+                        .nav-item {
+                            margin: 0 3px;
+                            .nav-link {
+                                font-weight: 500;
+                                margin: 0 3px;
+                                border-radius: 0;
+                                transition: ease all .5s;
+                                &:hover {
+                                    background: #d20d0d;
+                                    border-radius: 10px 0 10px 0;
+                                    color: whitesmoke;
+                                    transition: ease all .5s;
+                                }
+                            }
+                            .active {
+                                background: #d20d0d;
+                                border-radius: 10px 0 10px 0;
+                                color: whitesmoke;
+                                transition: ease all .5s;
+                            }
+                        }
+                    }
+                }
+                .icons {
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        font-size: medium;
+                        margin: 0 6px;
+                        padding: 5px;
+                        border-radius: 15%;
+                        transition: ease all .5s;
+                        i {
+                            font-weight: bold;
+                        }
+                        &:hover {
+                            background: brown;
+                            border-radius: 50%;
+                            color: whitesmoke;
+                            transition: ease all .5s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

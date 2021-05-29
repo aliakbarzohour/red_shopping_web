@@ -2,4 +2,70 @@
   margin: 0;
   padding: 0;
 }
+
+body .container .row .navbar .navbar-brand {
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 22px;
+  font-weight: 500;
+}
+
+body .container .row .navbar .collapse {
+  text-align: center;
+}
+
+body .container .row .navbar .collapse .navbar-nav {
+  margin: 0 100px;
+  text-align: center;
+}
+
+body .container .row .navbar .collapse .navbar-nav .nav-item {
+  margin: 0 3px;
+}
+
+body .container .row .navbar .collapse .navbar-nav .nav-item .nav-link {
+  font-weight: 500;
+  margin: 0 3px;
+  border-radius: 0;
+  -webkit-transition: ease all .5s;
+  transition: ease all .5s;
+}
+
+body .container .row .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
+  background: #d20d0d;
+  border-radius: 10px 0 10px 0;
+  color: whitesmoke;
+  -webkit-transition: ease all .5s;
+  transition: ease all .5s;
+}
+
+body .container .row .navbar .collapse .navbar-nav .nav-item .active {
+  background: #d20d0d;
+  border-radius: 10px 0 10px 0;
+  color: whitesmoke;
+  -webkit-transition: ease all .5s;
+  transition: ease all .5s;
+}
+
+body .container .row .navbar .icons a {
+  text-decoration: none;
+  color: black;
+  font-size: medium;
+  margin: 0 6px;
+  padding: 5px;
+  border-radius: 15%;
+  -webkit-transition: ease all .5s;
+  transition: ease all .5s;
+}
+
+body .container .row .navbar .icons a i {
+  font-weight: bold;
+}
+
+body .container .row .navbar .icons a:hover {
+  background: brown;
+  border-radius: 50%;
+  color: whitesmoke;
+  -webkit-transition: ease all .5s;
+  transition: ease all .5s;
+}
 /*# sourceMappingURL=style.css.map */
