@@ -1,51 +1,46 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
+/*start the coding . . .*/
 body .container .row .navbar .navbar-brand {
   color: rgba(0, 0, 0, 0.9);
   font-size: 22px;
   font-weight: 500;
 }
-
 body .container .row .navbar .collapse {
   text-align: center;
 }
-
 body .container .row .navbar .collapse .navbar-nav {
   margin: 0 100px;
   text-align: center;
 }
-
 body .container .row .navbar .collapse .navbar-nav .nav-item {
   margin: 0 3px;
 }
-
 body .container .row .navbar .collapse .navbar-nav .nav-item .nav-link {
   font-weight: 500;
   margin: 0 3px;
   border-radius: 0;
-  -webkit-transition: ease all .5s;
-  transition: ease all .5s;
+  -webkit-transition: ease all 0.5s;
+  transition: ease all 0.5s;
 }
-
 body .container .row .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
   background: #d20d0d;
   border-radius: 10px 0 10px 0;
   color: whitesmoke;
-  -webkit-transition: ease all .5s;
-  transition: ease all .5s;
+  -webkit-transition: ease all 0.5s;
+  transition: ease all 0.5s;
 }
-
 body .container .row .navbar .collapse .navbar-nav .nav-item .active {
   background: #d20d0d;
   border-radius: 10px 0 10px 0;
   color: whitesmoke;
-  -webkit-transition: ease all .5s;
-  transition: ease all .5s;
+  -webkit-transition: ease all 0.5s;
+  transition: ease all 0.5s;
 }
-
 body .container .row .navbar .icons a {
   text-decoration: none;
   color: black;
@@ -53,19 +48,44 @@ body .container .row .navbar .icons a {
   margin: 0 6px;
   padding: 5px;
   border-radius: 15%;
-  -webkit-transition: ease all .5s;
-  transition: ease all .5s;
+  -webkit-transition: ease all 0.5s;
+  transition: ease all 0.5s;
 }
-
 body .container .row .navbar .icons a i {
   font-weight: bold;
 }
-
 body .container .row .navbar .icons a:hover {
   background: brown;
   border-radius: 50%;
   color: whitesmoke;
-  -webkit-transition: ease all .5s;
-  transition: ease all .5s;
+  -webkit-transition: ease all 0.5s;
+  transition: ease all 0.5s;
 }
-/*# sourceMappingURL=style.css.map */
+body .container header .carousel .carousel-inner .carousel-item {
+  position: relative;
+}
+body .container header .carousel .carousel-inner .carousel-item img {
+  border-radius: 0 0 30px 30px;
+}
+body .container header .carousel .carousel-inner .carousel-item .carousel-caption {
+  position: absolute;
+  left: 60px;
+  top: 35%;
+  text-align: left;
+}
+body .container header .carousel .carousel-inner .carousel-item .carousel-caption h3 {
+  font-size: small;
+  font-weight: bold;
+}
+body .container header .carousel .carousel-inner .carousel-item .carousel-caption h1 {
+  font-size: 50px;
+  font-family: "Changa One", cursive;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.664);
+}
+body .container header .carousel .carousel-inner .carousel-item .carousel-caption p {
+  width: 50%;
+  font-weight: bold;
+}
+body .container header .carousel .carousel-inner .carousel-item .carousel-caption a {
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */
