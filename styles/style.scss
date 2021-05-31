@@ -5,12 +5,14 @@
 }
 
 
-/*start the coding . . .*/
+/* -------------------- start the coding . . .*/
 
 body {
+    /* --------------- container for all header for responsive */
     .container {
         .row {
             .navbar {
+                /* ----------------- navbar */
                 .navbar-brand {
                     color: rgba(0, 0, 0, .9);
                     font-size: 22px;
@@ -70,6 +72,7 @@ body {
             }
         }
         header {
+            /*---------------- slider */
             .carousel {
                 .carousel-inner {
                     .carousel-item {

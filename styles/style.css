@@ -4,7 +4,13 @@
   font-family: "Roboto", sans-serif;
 }
 
-/*start the coding . . .*/
+/* -------------------- start the coding . . .*/
+body {
+  /* --------------- container for all header for responsive */
+}
+body .container .row .navbar {
+  /* ----------------- navbar */
+}
 body .container .row .navbar .navbar-brand {
   color: rgba(0, 0, 0, 0.9);
   font-size: 22px;
@@ -60,6 +66,9 @@ body .container .row .navbar .icons a:hover {
   color: whitesmoke;
   -webkit-transition: ease all 0.5s;
   transition: ease all 0.5s;
+}
+body .container header {
+  /*---------------- slider */
 }
 body .container header .carousel .carousel-inner .carousel-item {
   position: relative;
