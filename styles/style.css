@@ -1,100 +1,210 @@
 * {
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
 }
 
+
 /* -------------------- start the coding . . .*/
+
 body {
-  /* --------------- container for all header for responsive */
+    /* --------------- container for all header for responsive */
 }
+
+body .loader-container {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #f1f1f1de;
+    min-height: 100vh;
+    -webkit-transition: ease all 0.5s;
+    transition: ease all 0.5s;
+}
+
+body .loader-container .loader {
+    position: relative;
+    width: 170px;
+    height: 170px;
+    border: 4px solid #f1f1f1;
+    border-radius: 50%;
+    overflow: hidden;
+    -webkit-box-shadow: -10px -10px 15px white, 10px 10px 10px rgba(255, 255, 255, 0.1), inset -10px -10px 15px white, inset 10px 10px 10px rgba(255, 255, 255, 0.1);
+    box-shadow: -10px -10px 15px white, 10px 10px 10px rgba(255, 255, 255, 0.1), inset -10px -10px 15px white, inset 10px 10px 10px rgba(255, 255, 255, 0.1);
+}
+
+body .loader-container .loader::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 25px;
+    left: 25px;
+    right: 25px;
+    bottom: 25px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    border: 4px solid #f1f1f1;
+    -webkit-box-shadow: inset -10px -10px 15px white, inset 10px 10px 10px rgba(255, 255, 255, 0.1);
+    box-shadow: inset -10px -10px 15px white, inset 10px 10px 10px rgba(255, 255, 255, 0.1);
+}
+
+body .loader-container .loader span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#14f7ff), color-stop(#ffd517), to(#ff0000));
+    background: linear-gradient(#14f7ff, #ffd517, #ff0000);
+    z-index: 0;
+    -webkit-filter: blur(30px);
+    filter: blur(30px);
+    -webkit-animation: loading 0.5s linear infinite;
+    animation: loading 0.5s linear infinite;
+}
+
+@-webkit-keyframes loading {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loading {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+body .loaded {
+    opacity: 0;
+    visibility: hidden;
+}
+
 body .container .row .navbar {
-  /* ----------------- navbar */
+    /* ----------------- navbar */
 }
+
 body .container .row .navbar .navbar-brand {
-  color: rgba(0, 0, 0, 0.9);
-  font-size: 22px;
-  font-weight: 500;
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 22px;
+    font-weight: 500;
 }
+
 body .container .row .navbar .collapse {
-  text-align: center;
+    text-align: center;
 }
+
 body .container .row .navbar .collapse .navbar-nav {
-  margin: 0 100px;
-  text-align: center;
+    margin: 0 100px;
+    text-align: center;
 }
+
 body .container .row .navbar .collapse .navbar-nav .nav-item {
-  margin: 0 3px;
+    margin: 0 3px;
 }
+
 body .container .row .navbar .collapse .navbar-nav .nav-item .nav-link {
-  font-weight: 500;
-  margin: 0 3px;
-  border-radius: 0;
-  -webkit-transition: ease all 0.5s;
-  transition: ease all 0.5s;
+    font-weight: 500;
+    margin: 0 3px;
+    border-radius: 0;
+    -webkit-transition: ease all 0.5s;
+    transition: ease all 0.5s;
 }
+
 body .container .row .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
-  background: #d20d0d;
-  border-radius: 10px 0 10px 0;
-  color: whitesmoke;
-  -webkit-transition: ease all 0.5s;
-  transition: ease all 0.5s;
+    background: #d20d0d;
+    border-radius: 10px 0 10px 0;
+    color: whitesmoke;
+    -webkit-transition: ease all 0.5s;
+    transition: ease all 0.5s;
 }
+
 body .container .row .navbar .collapse .navbar-nav .nav-item .active {
-  background: #d20d0d;
-  border-radius: 10px 0 10px 0;
-  color: whitesmoke;
-  -webkit-transition: ease all 0.5s;
-  transition: ease all 0.5s;
+    background: #d20d0d;
+    border-radius: 10px 0 10px 0;
+    color: whitesmoke;
+    -webkit-transition: ease all 0.5s;
+    transition: ease all 0.5s;
 }
+
 body .container .row .navbar .icons a {
-  text-decoration: none;
-  color: black;
-  font-size: medium;
-  margin: 0 6px;
-  padding: 5px;
-  border-radius: 15%;
-  -webkit-transition: ease all 0.5s;
-  transition: ease all 0.5s;
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+    margin: 0 6px;
+    padding: 5px;
+    border-radius: 15%;
+    -webkit-transition: ease all 0.5s;
+    transition: ease all 0.5s;
 }
+
 body .container .row .navbar .icons a i {
-  font-weight: bold;
+    font-weight: bold;
 }
+
 body .container .row .navbar .icons a:hover {
-  background: brown;
-  border-radius: 50%;
-  color: whitesmoke;
-  -webkit-transition: ease all 0.5s;
-  transition: ease all 0.5s;
+    background: brown;
+    border-radius: 50%;
+    color: whitesmoke;
+    -webkit-transition: ease all 0.5s;
+    transition: ease all 0.5s;
 }
+
 body .container header {
-  /*---------------- slider */
+    /*---------------- slider */
 }
+
 body .container header .carousel .carousel-inner .carousel-item {
-  position: relative;
+    position: relative;
 }
+
 body .container header .carousel .carousel-inner .carousel-item img {
-  border-radius: 0 0 30px 30px;
+    border-radius: 0 0 30px 30px;
 }
+
 body .container header .carousel .carousel-inner .carousel-item .carousel-caption {
-  position: absolute;
-  left: 60px;
-  top: 35%;
-  text-align: left;
+    position: absolute;
+    left: 60px;
+    top: 35%;
+    text-align: left;
 }
+
 body .container header .carousel .carousel-inner .carousel-item .carousel-caption h3 {
-  font-size: small;
-  font-weight: bold;
+    font-size: small;
+    font-weight: bold;
 }
+
 body .container header .carousel .carousel-inner .carousel-item .carousel-caption h1 {
-  font-size: 50px;
-  font-family: "Changa One", cursive;
-  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.664);
+    font-size: 50px;
+    font-family: "Changa One", cursive;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.664);
 }
+
 body .container header .carousel .carousel-inner .carousel-item .carousel-caption p {
-  width: 50%;
-  font-weight: bold;
+    width: 50%;
+    font-weight: bold;
 }
+
 body .container header .carousel .carousel-inner .carousel-item .carousel-caption a {
-  font-weight: bold;
-}/*# sourceMappingURL=style.css.map */
+    font-weight: bold;
+}
+
+
+/*# sourceMappingURL=style.css.map */
