@@ -161,5 +161,32 @@ body {
                 }
             }
         }
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .head {
+                text-align: center;
+            }
+            .row {
+                background: none;
+                .col {
+                    .card {
+                        border: none;
+                        background: none;
+                        img {
+                            border-radius: 50%;
+                            box-shadow: 0 2px 8px #000000a1;
+                            overflow: hidden;
+                        }
+                        .card-body {
+                            text-align: center;
+                            h5 {}
+                        }
+                    }
+                }
+            }
+        }
     }
 }
