@@ -194,6 +194,17 @@ body .container main {
 }
 body .container main .head {
   text-align: center;
+  margin: 90px 100px 0 100px;
+  padding: 0 40px;
+}
+body .container main .head h4 {
+  font-family: "Changa One", cursive;
+  font-weight: unset;
+  font-size: xx-large;
+}
+body .container main .head p {
+  font-weight: bold;
+  line-height: 2;
 }
 body .container main .row {
   background: none;
@@ -202,12 +213,37 @@ body .container main .row .col .card {
   border: none;
   background: none;
 }
-body .container main .row .col .card img {
+body .container main .row .col .card a {
+  text-decoration: none;
+}
+body .container main .row .col .card a img {
   border-radius: 50%;
   -webkit-box-shadow: 0 2px 8px #000000a1;
           box-shadow: 0 2px 8px #000000a1;
+  -webkit-transition: ease all 0.5s;
+  transition: ease all 0.5s;
   overflow: hidden;
+}
+body .container main .row .col .card a img:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-box-shadow: 0 2px 10px #000000bd;
+          box-shadow: 0 2px 10px #000000bd;
+  cursor: pointer;
+  -webkit-transition: ease all 0.5s;
+  transition: ease all 0.5s;
 }
 body .container main .row .col .card .card-body {
   text-align: center;
+}
+body .container main .row .col .card .card-body h5 {
+  font-family: "Changa One", cursive;
+  font-weight: unset;
+  font-size: larger;
+}
+
+@media screen and (max-width: 520px) {
+  body .container main .head {
+    margin: 100px 0 0 0;
+  }
 }/*# sourceMappingURL=style.css.map */
