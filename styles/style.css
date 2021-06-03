@@ -1,13 +1,14 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* -------------------- start the coding . . .*/
 body {
   /* --------------- container for all header for responsive */
 }
+
 body .loader-container {
   position: absolute;
   z-index: 10;
@@ -23,9 +24,10 @@ body .loader-container {
           align-items: center;
   background-color: #f1f1f1de;
   min-height: 100vh;
-  -webkit-transition: ease all 0.5s;
-  transition: ease all 0.5s;
+  -webkit-transition: ease all .5s;
+  transition: ease all .5s;
 }
+
 body .loader-container .loader {
   position: relative;
   width: 100px;
@@ -36,6 +38,7 @@ body .loader-container .loader {
   -webkit-box-shadow: -10px -10px 15px white, 10px 10px 10px rgba(255, 255, 255, 0.1), inset -10px -10px 15px white, inset 10px 10px 10px rgba(255, 255, 255, 0.1);
           box-shadow: -10px -10px 15px white, 10px 10px 10px rgba(255, 255, 255, 0.1), inset -10px -10px 15px white, inset 10px 10px 10px rgba(255, 255, 255, 0.1);
 }
+
 body .loader-container .loader ::before {
   content: "";
   position: absolute;
@@ -50,6 +53,7 @@ body .loader-container .loader ::before {
   -webkit-box-shadow: inset -10px -10px 15px white, inset 10px 10px 10px rgba(255, 255, 255, 0.1);
           box-shadow: inset -10px -10px 15px white, inset 10px 10px 10px rgba(255, 255, 255, 0.1);
 }
+
 body .loader-container .loader span {
   position: absolute;
   width: 100%;
@@ -63,6 +67,7 @@ body .loader-container .loader span {
   -webkit-animation: loading 0.5s linear infinite;
           animation: loading 0.5s linear infinite;
 }
+
 @-webkit-keyframes loading {
   0% {
     -webkit-transform: rotate(0deg);
@@ -73,6 +78,7 @@ body .loader-container .loader span {
             transform: rotate(360deg);
   }
 }
+
 @keyframes loading {
   0% {
     -webkit-transform: rotate(0deg);
@@ -83,49 +89,59 @@ body .loader-container .loader span {
             transform: rotate(360deg);
   }
 }
+
 body .loaded {
   opacity: 0;
   visibility: hidden;
 }
+
 body .container .row .navbar {
   /* ----------------- navbar */
 }
+
 body .container .row .navbar .navbar-brand {
   color: rgba(0, 0, 0, 0.9);
   font-size: 22px;
   font-weight: 500;
 }
+
 body .container .row .navbar .collapse {
   text-align: center;
 }
+
 body .container .row .navbar .collapse .navbar-nav {
   margin: 0 100px;
   text-align: center;
 }
+
 body .container .row .navbar .collapse .navbar-nav .nav-item {
   margin: 0 3px;
 }
+
 body .container .row .navbar .collapse .navbar-nav .nav-item .nav-link {
   font-weight: 500;
   margin: 0 3px;
   border-radius: 0;
-  -webkit-transition: ease all 0.5s;
-  transition: ease all 0.5s;
+  -webkit-transition: ease all .5s;
+  transition: ease all .5s;
 }
+
 body .container .row .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
   background: #d20d0d;
   border-radius: 10px 0 10px 0;
   color: whitesmoke;
-  -webkit-transition: ease all 0.5s;
-  transition: ease all 0.5s;
+  -webkit-transition: ease all .5s;
+  transition: ease all .5s;
 }
+
 body .container .row .navbar .collapse .navbar-nav .nav-item .active {
   background: #d20d0d;
   border-radius: 10px 0 10px 0;
   color: whitesmoke;
-  -webkit-transition: ease all 0.5s;
-  transition: ease all 0.5s;
+  -webkit-transition: ease all .5s;
+  transition: ease all .5s;
 }
+
 body .container .row .navbar .icons a {
   text-decoration: none;
   color: black;
@@ -133,50 +149,61 @@ body .container .row .navbar .icons a {
   margin: 0 6px;
   padding: 5px;
   border-radius: 15%;
-  -webkit-transition: ease all 0.5s;
-  transition: ease all 0.5s;
+  -webkit-transition: ease all .5s;
+  transition: ease all .5s;
 }
+
 body .container .row .navbar .icons a i {
   font-weight: bold;
 }
+
 body .container .row .navbar .icons a:hover {
   background: brown;
   border-radius: 50%;
   color: whitesmoke;
-  -webkit-transition: ease all 0.5s;
-  transition: ease all 0.5s;
+  -webkit-transition: ease all .5s;
+  transition: ease all .5s;
 }
+
 body .container header {
   /*---------------- slider */
 }
+
 body .container header .carousel .carousel-inner .carousel-item {
   position: relative;
 }
+
 body .container header .carousel .carousel-inner .carousel-item img {
   border-radius: 0 0 30px 30px;
 }
+
 body .container header .carousel .carousel-inner .carousel-item .carousel-caption {
   position: absolute;
   left: 60px;
   top: 35%;
   text-align: left;
 }
+
 body .container header .carousel .carousel-inner .carousel-item .carousel-caption h3 {
   font-size: small;
   font-weight: bold;
 }
+
 body .container header .carousel .carousel-inner .carousel-item .carousel-caption h1 {
   font-size: 50px;
-  font-family: "Changa One", cursive;
+  font-family: 'Changa One', cursive;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.664);
 }
+
 body .container header .carousel .carousel-inner .carousel-item .carousel-caption p {
   width: 50%;
   font-weight: bold;
 }
+
 body .container header .carousel .carousel-inner .carousel-item .carousel-caption a {
   font-weight: bold;
 }
+
 body .container main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -192,30 +219,37 @@ body .container main {
       -ms-flex-align: center;
           align-items: center;
 }
+
 body .container main .head {
   text-align: center;
   margin: 90px 100px 0 100px;
   padding: 0 40px;
 }
+
 body .container main .head h4 {
   font-family: "Changa One", cursive;
   font-weight: unset;
   font-size: xx-large;
 }
+
 body .container main .head p {
   font-weight: bold;
   line-height: 2;
 }
+
 body .container main .row {
   background: none;
 }
+
 body .container main .row .col .card {
   border: none;
   background: none;
 }
+
 body .container main .row .col .card a {
   text-decoration: none;
 }
+
 body .container main .row .col .card a img {
   border-radius: 50%;
   -webkit-box-shadow: 0 2px 8px #000000a1;
@@ -224,43 +258,53 @@ body .container main .row .col .card a img {
   transition: ease all 0.5s;
   overflow: hidden;
 }
+
 body .container main .row .col .card a img:hover {
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
   -webkit-box-shadow: 0 2px 10px #000000bd;
           box-shadow: 0 2px 10px #000000bd;
   cursor: pointer;
-  -webkit-transition: ease all 0.5s;
-  transition: ease all 0.5s;
+  -webkit-transition: ease all .5s;
+  transition: ease all .5s;
 }
+
 body .container main .row .col .card .card-body {
   text-align: center;
 }
+
 body .container main .row .col .card .card-body h5 {
-  font-family: "Changa One", cursive;
+  font-family: 'Changa One', cursive;
   font-weight: unset;
   font-size: larger;
 }
+
 body .container main .trends {
-  margin: 100px 0;
+  margin: 100px 0 0 0;
 }
-body .container main .trends .card-group .card {
+
+body .container main .trends .col .card {
   border: none;
   border-radius: 10px;
-  -webkit-transition: ease all 0.5s;
-  transition: ease all 0.5s;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 2px 10px #0000002f;
+          box-shadow: 0 2px 10px #0000002f;
+  -webkit-transition: ease all .5s;
+  transition: ease all .5s;
   position: relative;
 }
-body .container main .trends .card-group .card:hover {
+
+body .container main .trends .col .card:hover {
   -webkit-transform: translateY(-15px);
           transform: translateY(-15px);
   -webkit-box-shadow: 0 2px 10px #00000044;
           box-shadow: 0 2px 10px #00000044;
   cursor: pointer;
-  -webkit-transition: ease all 0.5s;
-  transition: ease all 0.5s;
+  -webkit-transition: ease all .5s;
+  transition: ease all .5s;
 }
-body .container main .trends .card-group .card .card-img-overlay {
+
+body .container main .trends .col .card .card-img-overlay {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -275,16 +319,19 @@ body .container main .trends .card-group .card .card-img-overlay {
       -ms-flex-pack: center;
           justify-content: center;
 }
-body .container main .trends .card-group .card .card-img-overlay h5 {
+
+body .container main .trends .col .card .card-img-overlay h5 {
   font-size: 15px;
 }
-body .container main .trends .card-group .card .card-img-overlay h4 {
+
+body .container main .trends .col .card .card-img-overlay h4 {
   font-size: 20px;
   color: white;
   text-shadow: 0 2px 2px black;
   font-weight: bold;
 }
-body .container main .trends .card-group .card .card-img-overlay a {
+
+body .container main .trends .col .card .card-img-overlay a {
   text-shadow: 0 2px 2px rgba(255, 255, 255, 0.856);
   text-decoration: none;
   color: #070000;
@@ -292,12 +339,10 @@ body .container main .trends .card-group .card .card-img-overlay a {
   padding: 5px 0;
   font-size: 12px;
 }
-body .container main .trends .card-group .center {
-  margin: 0 10px;
-}
 
 @media screen and (max-width: 520px) {
   body .container main .head {
     margin: 100px 0 0 0;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */
