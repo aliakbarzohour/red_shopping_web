@@ -13,6 +13,18 @@
     }
 }
 
+// before for new product 
+@mixin new {
+    content: "new";
+    color: white;
+    background-color: red;
+    padding: 5px 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -142,7 +154,7 @@ body {
             }
             // sticky mode fot all size ------>
             .sticky {
-                background-color: #e68a9dd6;
+                background-color: #f1f1f1e5;
                 border-radius: 0 0 30px 30px;
                 padding: 10px 40px;
                 position: fixed;
@@ -150,13 +162,6 @@ body {
                 left: 0;
                 z-index: 1;
                 transition: ease all .5s;
-                .navbar-brand,
-                a {
-                    color: white;
-                }
-                .icons a i {
-                    color: whitesmoke;
-                }
             }
         }
     }
@@ -277,7 +282,53 @@ body {
                 }
             }
         }
-        // coding ... 
+        .trendig {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            .row {
+                .col {
+                    .card {
+                        box-shadow: 0 2px 5px rgba(2, 2, 2, 0.253);
+                        transition: ease all .5s;
+                        &:hover {
+                            cursor: pointer;
+                            transform: scale(1.1);
+                            transition: ease all .5s;
+                        }
+                        img {
+                            background-color: #eaeaea;
+                            overflow: hidden;
+                            height: 210px;
+                            padding: 10px;
+                        }
+                        .card-body {
+                            .stars {
+                                .bi-star-fill {
+                                    color: goldenrod;
+                                }
+                            }
+                        }
+                        .new {
+                             ::before {
+                                content: "aliakbar";
+                                color: white;
+                                background: red;
+                                padding: 5px 10px;
+                                border-radius: 5px;
+                                position: absolute;
+                                top: 10px;
+                                right: 10px;
+                                font-weight: bold;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 

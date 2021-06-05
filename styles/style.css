@@ -171,7 +171,7 @@ body .container .row .navbar .icons a:hover {
 }
 
 body .container .row .sticky {
-  background-color: #e68a9dd6;
+  background-color: #f1f1f1e5;
   border-radius: 0 0 30px 30px;
   padding: 10px 40px;
   position: fixed;
@@ -180,15 +180,6 @@ body .container .row .sticky {
   z-index: 1;
   -webkit-transition: ease all .5s;
   transition: ease all .5s;
-}
-
-body .container .row .sticky .navbar-brand,
-body .container .row .sticky a {
-  color: white;
-}
-
-body .container .row .sticky .icons a i {
-  color: whitesmoke;
 }
 
 body header {
@@ -363,6 +354,63 @@ body main .trends .col .card .card-img-overlay a {
   color: #070000;
   border-bottom: 1px solid #070000;
   padding: 5px 0;
+  font-size: 12px;
+}
+
+body main .trendig {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .trendig .row .col .card {
+  -webkit-box-shadow: 0 2px 5px rgba(2, 2, 2, 0.253);
+          box-shadow: 0 2px 5px rgba(2, 2, 2, 0.253);
+  -webkit-transition: ease all .5s;
+  transition: ease all .5s;
+}
+
+body main .trendig .row .col .card:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: ease all .5s;
+  transition: ease all .5s;
+}
+
+body main .trendig .row .col .card img {
+  background-color: #eaeaea;
+  overflow: hidden;
+  height: 210px;
+  padding: 10px;
+}
+
+body main .trendig .row .col .card .card-body .stars .bi-star-fill {
+  color: goldenrod;
+}
+
+body main .trendig .row .col .card .new ::before {
+  content: "aliakbar";
+  color: white;
+  background: red;
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: bold;
   font-size: 12px;
 }
 
