@@ -1,3 +1,18 @@
+@mixin titr-rows {
+    text-align: center;
+    margin: 90px 100px 0 100px;
+    padding: 0 40px;
+    h4 {
+        font-family: "Changa One", cursive;
+        font-weight: unset;
+        font-size: xx-large;
+    }
+    p {
+        font-weight: bold;
+        line-height: 2;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -165,18 +180,7 @@ body {
             justify-content: center;
             align-items: center;
             .head {
-                text-align: center;
-                margin: 90px 100px 0 100px;
-                padding: 0 40px;
-                h4 {
-                    font-family: "Changa One", cursive;
-                    font-weight: unset;
-                    font-size: xx-large;
-                }
-                p {
-                    font-weight: bold;
-                    line-height: 2;
-                }
+                @include titr-rows;
             }
             .row {
                 background: none;
@@ -252,6 +256,7 @@ body {
                     }
                 }
             }
+            // coding ... 
         }
     }
 }
