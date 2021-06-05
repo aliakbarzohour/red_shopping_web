@@ -87,18 +87,16 @@ body {
                                 font-weight: 500;
                                 margin: 0 3px;
                                 border-radius: 0;
+                                border-bottom: 2px;
                                 transition: ease all .5s;
                                 &:hover {
-                                    background: #d20d0d;
-                                    border-radius: 10px 0 10px 0;
-                                    color: whitesmoke;
+                                    color: #e60202;
                                     transition: ease all .5s;
                                 }
                             }
                             .active {
-                                background: #d20d0d;
-                                border-radius: 10px 0 10px 0;
-                                color: whitesmoke;
+                                color: #e60202;
+                                border-bottom: 2px solid red;
                                 transition: ease all .5s;
                             }
                         }

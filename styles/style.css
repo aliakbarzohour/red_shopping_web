@@ -122,22 +122,20 @@ body .container .row .navbar .collapse .navbar-nav .nav-item .nav-link {
   font-weight: 500;
   margin: 0 3px;
   border-radius: 0;
+  border-bottom: 2px;
   -webkit-transition: ease all .5s;
   transition: ease all .5s;
 }
 
 body .container .row .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
-  background: #d20d0d;
-  border-radius: 10px 0 10px 0;
-  color: whitesmoke;
+  color: #e60202;
   -webkit-transition: ease all .5s;
   transition: ease all .5s;
 }
 
 body .container .row .navbar .collapse .navbar-nav .nav-item .active {
-  background: #d20d0d;
-  border-radius: 10px 0 10px 0;
-  color: whitesmoke;
+  color: #e60202;
+  border-bottom: 2px solid red;
   -webkit-transition: ease all .5s;
   transition: ease all .5s;
 }

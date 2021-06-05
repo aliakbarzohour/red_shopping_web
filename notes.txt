@@ -1,3 +1,4 @@
 ------- notes -----------------------
 
-- responsive trends card .
+- responsive trends card --> Done.
+- add the trending row --> wait . . .
