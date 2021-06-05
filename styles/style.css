@@ -95,7 +95,14 @@ body .loaded {
   visibility: hidden;
 }
 
+body .container .row {
+  -webkit-transition: ease all .5s;
+  transition: ease all .5s;
+}
+
 body .container .row .navbar {
+  -webkit-transition: ease all .5s;
+  transition: ease all .5s;
   /* ----------------- navbar */
 }
 
@@ -163,46 +170,67 @@ body .container .row .navbar .icons a:hover {
   transition: ease all .5s;
 }
 
-body .container header {
+body .container .row .sticky {
+  background-color: #e68a9dd6;
+  border-radius: 0 0 30px 30px;
+  padding: 10px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  -webkit-transition: ease all .5s;
+  transition: ease all .5s;
+}
+
+body .container .row .sticky .navbar-brand,
+body .container .row .sticky a {
+  color: white;
+}
+
+body .container .row .sticky .icons a i {
+  color: whitesmoke;
+}
+
+body header {
   /*---------------- slider */
 }
 
-body .container header .carousel .carousel-inner .carousel-item {
+body header .carousel .carousel-inner .carousel-item {
   position: relative;
 }
 
-body .container header .carousel .carousel-inner .carousel-item img {
+body header .carousel .carousel-inner .carousel-item img {
   border-radius: 0 0 30px 30px;
 }
 
-body .container header .carousel .carousel-inner .carousel-item .carousel-caption {
+body header .carousel .carousel-inner .carousel-item .carousel-caption {
   position: absolute;
   left: 60px;
   top: 35%;
   text-align: left;
 }
 
-body .container header .carousel .carousel-inner .carousel-item .carousel-caption h3 {
+body header .carousel .carousel-inner .carousel-item .carousel-caption h3 {
   font-size: small;
   font-weight: bold;
 }
 
-body .container header .carousel .carousel-inner .carousel-item .carousel-caption h1 {
+body header .carousel .carousel-inner .carousel-item .carousel-caption h1 {
   font-size: 50px;
   font-family: 'Changa One', cursive;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.664);
 }
 
-body .container header .carousel .carousel-inner .carousel-item .carousel-caption p {
+body header .carousel .carousel-inner .carousel-item .carousel-caption p {
   width: 50%;
   font-weight: bold;
 }
 
-body .container header .carousel .carousel-inner .carousel-item .carousel-caption a {
+body header .carousel .carousel-inner .carousel-item .carousel-caption a {
   font-weight: bold;
 }
 
-body .container main {
+body main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -218,37 +246,37 @@ body .container main {
           align-items: center;
 }
 
-body .container main .head {
+body main .head {
   text-align: center;
   margin: 90px 100px 0 100px;
   padding: 0 40px;
 }
 
-body .container main .head h4 {
+body main .head h4 {
   font-family: "Changa One", cursive;
   font-weight: unset;
   font-size: xx-large;
 }
 
-body .container main .head p {
+body main .head p {
   font-weight: bold;
   line-height: 2;
 }
 
-body .container main .row {
+body main .row {
   background: none;
 }
 
-body .container main .row .col .card {
+body main .row .col .card {
   border: none;
   background: none;
 }
 
-body .container main .row .col .card a {
+body main .row .col .card a {
   text-decoration: none;
 }
 
-body .container main .row .col .card a img {
+body main .row .col .card a img {
   border-radius: 50%;
   -webkit-box-shadow: 0 2px 8px #000000a1;
           box-shadow: 0 2px 8px #000000a1;
@@ -257,7 +285,7 @@ body .container main .row .col .card a img {
   overflow: hidden;
 }
 
-body .container main .row .col .card a img:hover {
+body main .row .col .card a img:hover {
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
   -webkit-box-shadow: 0 2px 10px #000000bd;
@@ -267,21 +295,21 @@ body .container main .row .col .card a img:hover {
   transition: ease all .5s;
 }
 
-body .container main .row .col .card .card-body {
+body main .row .col .card .card-body {
   text-align: center;
 }
 
-body .container main .row .col .card .card-body h5 {
+body main .row .col .card .card-body h5 {
   font-family: 'Changa One', cursive;
   font-weight: unset;
   font-size: larger;
 }
 
-body .container main .trends {
+body main .trends {
   margin: 100px 0 0 0;
 }
 
-body .container main .trends .col .card {
+body main .trends .col .card {
   border: none;
   border-radius: 10px;
   border-radius: 10px;
@@ -292,7 +320,7 @@ body .container main .trends .col .card {
   position: relative;
 }
 
-body .container main .trends .col .card:hover {
+body main .trends .col .card:hover {
   -webkit-transform: translateY(-15px);
           transform: translateY(-15px);
   -webkit-box-shadow: 0 2px 10px #00000044;
@@ -302,7 +330,7 @@ body .container main .trends .col .card:hover {
   transition: ease all .5s;
 }
 
-body .container main .trends .col .card .card-img-overlay {
+body main .trends .col .card .card-img-overlay {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -318,18 +346,18 @@ body .container main .trends .col .card .card-img-overlay {
           justify-content: center;
 }
 
-body .container main .trends .col .card .card-img-overlay h5 {
+body main .trends .col .card .card-img-overlay h5 {
   font-size: 15px;
 }
 
-body .container main .trends .col .card .card-img-overlay h4 {
+body main .trends .col .card .card-img-overlay h4 {
   font-size: 20px;
   color: white;
   text-shadow: 0 2px 2px black;
   font-weight: bold;
 }
 
-body .container main .trends .col .card .card-img-overlay a {
+body main .trends .col .card .card-img-overlay a {
   text-shadow: 0 2px 2px rgba(255, 255, 255, 0.856);
   text-decoration: none;
   color: #070000;

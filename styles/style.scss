@@ -81,7 +81,9 @@ body {
     }
     .container {
         .row {
+            transition: ease all .5s;
             .navbar {
+                transition: ease all .5s;
                 /* ----------------- navbar */
                 .navbar-brand {
                     color: rgba(0, 0, 0, .9);
@@ -138,126 +140,144 @@ body {
                     }
                 }
             }
-        }
-        header {
-            /*---------------- slider */
-            .carousel {
-                .carousel-inner {
-                    .carousel-item {
-                        position: relative;
-                        img {
-                            border-radius: 0 0 30px 30px;
-                        }
-                        .carousel-caption {
-                            position: absolute;
-                            left: 60px;
-                            top: 35%;
-                            text-align: left;
-                            h3 {
-                                font-size: small;
-                                font-weight: bold;
-                            }
-                            h1 {
-                                font-size: 50px;
-                                font-family: 'Changa One', cursive;
-                                text-shadow: 0 2px 2px rgba(0, 0, 0, 0.664);
-                            }
-                            p {
-                                width: 50%;
-                                font-weight: bold;
-                            }
-                            a {
-                                font-weight: bold;
-                            }
-                        }
-                    }
+            // sticky mode fot all size ------>
+            .sticky {
+                background-color: #e68a9dd6;
+                border-radius: 0 0 30px 30px;
+                padding: 10px 40px;
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                transition: ease all .5s;
+                .navbar-brand,
+                a {
+                    color: white;
+                }
+                .icons a i {
+                    color: whitesmoke;
                 }
             }
         }
-        main {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            .head {
-                @include titr-rows;
-            }
-            .row {
-                background: none;
-                .col {
-                    .card {
-                        border: none;
-                        background: none;
+    }
+    header {
+        /*---------------- slider */
+        .carousel {
+            .carousel-inner {
+                .carousel-item {
+                    position: relative;
+                    img {
+                        border-radius: 0 0 30px 30px;
+                    }
+                    .carousel-caption {
+                        position: absolute;
+                        left: 60px;
+                        top: 35%;
+                        text-align: left;
+                        h3 {
+                            font-size: small;
+                            font-weight: bold;
+                        }
+                        h1 {
+                            font-size: 50px;
+                            font-family: 'Changa One', cursive;
+                            text-shadow: 0 2px 2px rgba(0, 0, 0, 0.664);
+                        }
+                        p {
+                            width: 50%;
+                            font-weight: bold;
+                        }
                         a {
-                            text-decoration: none;
-                            img {
-                                border-radius: 50%;
-                                box-shadow: 0 2px 8px #000000a1;
-                                transition: ease all 0.5s;
-                                overflow: hidden;
-                                &:hover {
-                                    transform: translateY(-10px);
-                                    box-shadow: 0 2px 10px #000000bd;
-                                    cursor: pointer;
-                                    transition: ease all .5s;
-                                }
-                            }
-                        }
-                        .card-body {
-                            text-align: center;
-                            h5 {
-                                font-family: 'Changa One', cursive;
-                                font-weight: unset;
-                                font-size: larger;
-                            }
+                            font-weight: bold;
                         }
                     }
                 }
             }
-            .trends {
-                margin: 100px 0 0 0;
-                .col {
-                    .card {
-                        border: none;
-                        border-radius: 10px;
-                        border-radius: 10px;
-                        box-shadow: 0 2px 10px #0000002f;
-                        transition: ease all .5s;
-                        position: relative;
-                        &:hover {
-                            transform: translateY(-15px);
-                            box-shadow: 0 2px 10px #00000044;
-                            cursor: pointer;
-                            transition: ease all .5s;
-                        }
-                        .card-img-overlay {
-                            display: flex;
-                            flex-direction: column;
-                            align-items: baseline;
-                            justify-content: center;
-                            h5 {
-                                font-size: 15px;
-                            }
-                            h4 {
-                                font-size: 20px;
-                                color: white;
-                                text-shadow: 0 2px 2px rgb(0, 0, 0);
-                                font-weight: bold;
-                            }
-                            a {
-                                text-shadow: 0 2px 2px rgba(255, 255, 255, 0.856);
-                                text-decoration: none;
-                                color: rgb(7, 0, 0);
-                                border-bottom: 1px solid rgb(7, 0, 0);
-                                padding: 5px 0;
-                                font-size: 12px;
-                            }
-                        }
-                    }
-                }
-            }
-            // coding ... 
         }
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .head {
+            @include titr-rows;
+        }
+        .row {
+            background: none;
+            .col {
+                .card {
+                    border: none;
+                    background: none;
+                    a {
+                        text-decoration: none;
+                        img {
+                            border-radius: 50%;
+                            box-shadow: 0 2px 8px #000000a1;
+                            transition: ease all 0.5s;
+                            overflow: hidden;
+                            &:hover {
+                                transform: translateY(-10px);
+                                box-shadow: 0 2px 10px #000000bd;
+                                cursor: pointer;
+                                transition: ease all .5s;
+                            }
+                        }
+                    }
+                    .card-body {
+                        text-align: center;
+                        h5 {
+                            font-family: 'Changa One', cursive;
+                            font-weight: unset;
+                            font-size: larger;
+                        }
+                    }
+                }
+            }
+        }
+        .trends {
+            margin: 100px 0 0 0;
+            .col {
+                .card {
+                    border: none;
+                    border-radius: 10px;
+                    border-radius: 10px;
+                    box-shadow: 0 2px 10px #0000002f;
+                    transition: ease all .5s;
+                    position: relative;
+                    &:hover {
+                        transform: translateY(-15px);
+                        box-shadow: 0 2px 10px #00000044;
+                        cursor: pointer;
+                        transition: ease all .5s;
+                    }
+                    .card-img-overlay {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: baseline;
+                        justify-content: center;
+                        h5 {
+                            font-size: 15px;
+                        }
+                        h4 {
+                            font-size: 20px;
+                            color: white;
+                            text-shadow: 0 2px 2px rgb(0, 0, 0);
+                            font-weight: bold;
+                        }
+                        a {
+                            text-shadow: 0 2px 2px rgba(255, 255, 255, 0.856);
+                            text-decoration: none;
+                            color: rgb(7, 0, 0);
+                            border-bottom: 1px solid rgb(7, 0, 0);
+                            padding: 5px 0;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+        // coding ... 
     }
 }
 
