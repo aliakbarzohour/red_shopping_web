@@ -1,4 +1,12 @@
-------- notes -----------------------
-
-- responsive trends card --> Done.
-- add the trending row --> wait . . .
+------------------ notes -----------------------
+|
+|
+|   - add a persian languege in web --> wait . . .
+|
+|   - add a Dark mode in web --> wait ...
+|
+|   - Linked navbar item in web --> wait . . .
+|
+|
+|
+------------------------------------------------
