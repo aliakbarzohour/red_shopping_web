@@ -25,6 +25,38 @@
     right: 15px;
 }
 
+@mixin icons {
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: medium;
+        margin: 0 6px;
+        padding: 5px;
+        border-radius: 15%;
+        transition: ease all .5s;
+        i {
+            font-weight: bold;
+        }
+        &:hover {
+            background: brown;
+            border-radius: 50%;
+            color: whitesmoke;
+            transition: ease all .5s;
+        }
+    }
+}
+
+@mixin sticky {
+    background-color: rgba(255, 251, 251, 0.863);
+    border-radius: 0 0 30px 30px;
+    padding: 10px 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: ease all .5s;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -60,7 +92,19 @@ body {
                 margin: 10px auto;
                 box-shadow: 1px 5px 5px #ff6d6d98;
                 background-color: rgb(224, 0, 0);
+                -webkit-animation: loading 1s linear infinite;
                 animation: loading 1s linear infinite;
+                @-webkit-keyframes loading {
+                    0% {
+                        height: 15px;
+                    }
+                    50% {
+                        height: 90px;
+                    }
+                    100% {
+                        height: 15px;
+                    }
+                }
                 @keyframes loading {
                     0% {
                         height: 15px;
@@ -120,36 +164,12 @@ body {
                     }
                 }
                 .icons {
-                    a {
-                        text-decoration: none;
-                        color: black;
-                        font-size: medium;
-                        margin: 0 6px;
-                        padding: 5px;
-                        border-radius: 15%;
-                        transition: ease all .5s;
-                        i {
-                            font-weight: bold;
-                        }
-                        &:hover {
-                            background: brown;
-                            border-radius: 50%;
-                            color: whitesmoke;
-                            transition: ease all .5s;
-                        }
-                    }
+                    @include icons();
                 }
             }
             // sticky mode fot all size ------>
             .sticky {
-                background-color: #f1f1f1e5;
-                border-radius: 0 0 30px 30px;
-                padding: 10px 40px;
-                position: fixed;
-                top: 0;
-                left: 0;
-                z-index: 1;
-                transition: ease all .5s;
+                @include sticky();
             }
         }
     }
@@ -206,12 +226,12 @@ body {
                         text-decoration: none;
                         img {
                             border-radius: 50%;
-                            box-shadow: 0 2px 8px #000000a1;
+                            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.356);
                             transition: ease all 0.5s;
                             overflow: hidden;
                             &:hover {
                                 transform: translateY(-10px);
-                                box-shadow: 0 2px 10px #000000bd;
+                                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.555);
                                 cursor: pointer;
                                 transition: ease all .5s;
                             }
@@ -234,21 +254,24 @@ body {
                 .card {
                     border: none;
                     border-radius: 10px;
-                    border-radius: 10px;
-                    box-shadow: 0 2px 10px #0000002f;
+                    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.295);
                     transition: ease all .5s;
                     position: relative;
                     &:hover {
                         transform: translateY(-15px);
-                        box-shadow: 0 2px 10px #00000044;
+                        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.637);
                         cursor: pointer;
                         transition: ease all .5s;
+                    }
+                    img {
+                        border-radius: 10px;
                     }
                     .card-img-overlay {
                         display: flex;
                         flex-direction: column;
                         align-items: baseline;
                         justify-content: center;
+                        border-radius: 10px;
                         h5 {
                             font-size: 15px;
                         }

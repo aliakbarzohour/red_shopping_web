@@ -55,7 +55,7 @@ body .loader-container .loader span {
           box-shadow: 1px 5px 5px #ff6d6d98;
   background-color: #e00000;
   -webkit-animation: loading 1s linear infinite;
-          animation: loading 1s linear infinite;
+  animation: loading 1s linear infinite;
 }
 
 @-webkit-keyframes loading {
@@ -163,7 +163,7 @@ body .container .row .navbar .icons a:hover {
 }
 
 body .container .row .sticky {
-  background-color: #f1f1f1e5;
+  background-color: rgba(255, 251, 251, 0.863);
   border-radius: 0 0 30px 30px;
   padding: 10px 40px;
   position: fixed;
@@ -261,8 +261,8 @@ body main .row .col .card a {
 
 body main .row .col .card a img {
   border-radius: 50%;
-  -webkit-box-shadow: 0 2px 8px #000000a1;
-          box-shadow: 0 2px 8px #000000a1;
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.356);
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.356);
   -webkit-transition: ease all 0.5s;
   transition: ease all 0.5s;
   overflow: hidden;
@@ -271,8 +271,8 @@ body main .row .col .card a img {
 body main .row .col .card a img:hover {
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
-  -webkit-box-shadow: 0 2px 10px #000000bd;
-          box-shadow: 0 2px 10px #000000bd;
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.555);
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.555);
   cursor: pointer;
   -webkit-transition: ease all .5s;
   transition: ease all .5s;
@@ -295,9 +295,8 @@ body main .trends {
 body main .trends .col .card {
   border: none;
   border-radius: 10px;
-  border-radius: 10px;
-  -webkit-box-shadow: 0 2px 10px #0000002f;
-          box-shadow: 0 2px 10px #0000002f;
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.295);
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.295);
   -webkit-transition: ease all .5s;
   transition: ease all .5s;
   position: relative;
@@ -306,11 +305,15 @@ body main .trends .col .card {
 body main .trends .col .card:hover {
   -webkit-transform: translateY(-15px);
           transform: translateY(-15px);
-  -webkit-box-shadow: 0 2px 10px #00000044;
-          box-shadow: 0 2px 10px #00000044;
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.637);
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.637);
   cursor: pointer;
   -webkit-transition: ease all .5s;
   transition: ease all .5s;
+}
+
+body main .trends .col .card img {
+  border-radius: 10px;
 }
 
 body main .trends .col .card .card-img-overlay {
@@ -327,6 +330,7 @@ body main .trends .col .card .card-img-overlay {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-radius: 10px;
 }
 
 body main .trends .col .card .card-img-overlay h5 {
