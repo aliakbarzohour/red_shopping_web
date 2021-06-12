@@ -7,6 +7,7 @@
 |
 |   - Linked navbar item in web --> wait . . .
 |
+|   - added auto code prefixer in vscode --> Done .
 |
 |
 ------------------------------------------------
