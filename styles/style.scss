@@ -304,38 +304,70 @@ body {
             .row {
                 .col {
                     .card {
-                        box-shadow: 0 2px 5px rgba(2, 2, 2, 0.253);
+                        border-radius: 10px;
+                        box-shadow: 0 2px 5px rgba(2, 2, 2, 0.397);
                         transition: ease all .5s;
                         &:hover {
+                            -webkit-border-radius: 10px;
+                            -moz-border-radius: 10px;
+                            -ms-border-radius: 10px;
+                            -o-border-radius: 10px;
                             cursor: pointer;
-                            transform: scale(1.1);
+                            transform: scale(1.08);
                             transition: ease all .5s;
+                            -webkit-transform: scale(1.08);
+                            -moz-transform: scale(1.08);
+                            -ms-transform: scale(1.08);
+                            -o-transform: scale(1.08);
+                            -webkit-transition: ease all .5s;
+                            -moz-transition: ease all .5s;
+                            -ms-transition: ease all .5s;
+                            -o-transition: ease all .5s;
                         }
                         img {
                             background-color: #eaeaea;
                             overflow: hidden;
-                            height: 210px;
+                            height: 230px;
                             padding: 10px;
+                            border-radius: 10px;
+                            -webkit-border-radius: 10px;
+                            -moz-border-radius: 10px;
+                            -ms-border-radius: 10px;
+                            -o-border-radius: 10px;
                         }
                         .card-body {
+                            transition: ease-in-out all .4s;
+                            -webkit-transition: ease-in-out all .4s;
+                            -moz-transition: ease-in-out all .4s;
+                            -ms-transition: ease-in-out all .4s;
+                            -o-transition: ease-in-out all .4s;
                             .stars {
                                 .bi-star-fill {
                                     color: goldenrod;
                                 }
                             }
+                            .text {
+                                // h5 {}
+                                // p {}
+                            }
+                        }
+                        &:hover .card-body {
+                            transform: translateY(-87px);
+                            background: white;
+                            border-radius: 30px 30px 0 0;
+                            transition: ease-in-out all .4s;
+                            -webkit-transform: translateY(-87px);
+                            -moz-transform: translateY(-87px);
+                            -ms-transform: translateY(-87px);
+                            -o-transform: translateY(-87px);
+                            -webkit-transition: ease-in-out all .4s;
+                            -moz-transition: ease-in-out all .4s;
+                            -ms-transition: ease-in-out all .4s;
+                            -o-transition: ease-in-out all .4s;
                         }
                         .new {
                              ::before {
-                                content: "aliakbar";
-                                color: white;
-                                background: red;
-                                padding: 5px 10px;
-                                border-radius: 5px;
-                                position: absolute;
-                                top: 10px;
-                                right: 10px;
-                                font-weight: bold;
-                                font-size: 12px;
+                                @include new();
                             }
                         }
                     }
