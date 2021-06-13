@@ -75,7 +75,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #f1f1f1de;
+        background-color: rgba(255, 255, 255, 0.932);
         min-height: 100vh;
         transition: ease all .5s;
         .loader {
@@ -135,7 +135,9 @@ body {
                     font-weight: 500;
                 }
                 .navbar-toggler {
-                    .navbar-toggler-icon {}
+                    .navbar-toggler-icon {
+                        // this is a bootstrap btn for mobile and tablet size  
+                    }
                 }
                 .collapse {
                     text-align: center;
@@ -343,6 +345,7 @@ body {
     }
 }
 
+// start the coding responsiv mode 
 @media screen and (max-width:520px) {
     body {
         .container {
