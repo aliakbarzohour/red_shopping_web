@@ -87,6 +87,24 @@ body .loaded {
   visibility: hidden;
 }
 
+body .indicator-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 3px;
+  direction: rtl;
+  z-index: 20;
+}
+
+body .indicator-container .indicator {
+  width: 0;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(red), to(orange));
+  background: linear-gradient(red, orange);
+  -webkit-box-shadow: 0 3px 7px #ff5b5b;
+          box-shadow: 0 3px 7px #ff5b5b;
+}
+
 body .container .row {
   -webkit-transition: ease all .5s;
   transition: ease all .5s;
