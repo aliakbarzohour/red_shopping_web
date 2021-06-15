@@ -5,6 +5,11 @@
 }
 
 /* -------------------- start the coding . . .*/
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 body {
   /* --------------- container for all header for responsive */
 }
@@ -51,8 +56,8 @@ body .loader-container .loader span {
   height: 15px;
   border-radius: 10px;
   margin: 10px auto;
-  -webkit-box-shadow: 1px 5px 5px #ff6d6d98;
-          box-shadow: 1px 5px 5px #ff6d6d98;
+  -webkit-box-shadow: 1px 5px 5px #ffc165;
+          box-shadow: 1px 5px 5px #ffc165;
   background-color: #e00000;
   -webkit-animation: loading 1s linear infinite;
   animation: loading 1s linear infinite;
@@ -101,8 +106,8 @@ body .indicator-container .indicator {
   height: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(red), to(orange));
   background: linear-gradient(red, orange);
-  -webkit-box-shadow: 0 3px 7px #ff5b5b;
-          box-shadow: 0 3px 7px #ff5b5b;
+  -webkit-box-shadow: 0 3px 7px #ff8b8b;
+          box-shadow: 0 3px 7px #ff8b8b;
 }
 
 body .container .row {
@@ -113,6 +118,7 @@ body .container .row {
 body .container .row .navbar {
   -webkit-transition: ease all .5s;
   transition: ease all .5s;
+  padding: 0;
   /* ----------------- navbar */
 }
 
@@ -132,14 +138,12 @@ body .container .row .navbar .collapse .navbar-nav {
 }
 
 body .container .row .navbar .collapse .navbar-nav .nav-item {
-  margin: 0 3px;
+  margin: 0 2px;
 }
 
 body .container .row .navbar .collapse .navbar-nav .nav-item .nav-link {
+  padding: 10px 15px;
   font-weight: 500;
-  margin: 0 3px;
-  border-radius: 0;
-  border-bottom: 2px;
   -webkit-transition: ease all .5s;
   transition: ease all .5s;
 }
@@ -151,10 +155,13 @@ body .container .row .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
 }
 
 body .container .row .navbar .collapse .navbar-nav .nav-item .active {
-  color: #e60202;
-  border-bottom: 2px solid red;
-  -webkit-transition: ease all .5s;
-  transition: ease all .5s;
+  background: #ff4141;
+  color: white;
+  transition: ease-in all .5s;
+  -webkit-transition: ease-in all .5s;
+  -moz-transition: ease-in all .5s;
+  -ms-transition: ease-in all .5s;
+  -o-transition: ease-in all .5s;
 }
 
 body .container .row .navbar .icons a {
@@ -181,15 +188,22 @@ body .container .row .navbar .icons a:hover {
 }
 
 body .container .row .sticky {
-  background-color: rgba(255, 232, 232, 0.836);
-  border-radius: 0 0 30px 30px;
-  padding: 10px 40px;
+  background-color: rgba(255, 255, 255, 0.877);
+  border-radius: 0 0 15px 15px;
+  padding: 20px 25px;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1;
-  -webkit-transition: ease all .5s;
-  transition: ease all .5s;
+  transition: ease-in-out all .5s;
+  -webkit-border-radius: 0 0 15px 15px;
+  -moz-border-radius: 0 0 15px 15px;
+  -ms-border-radius: 0 0 15px 15px;
+  -o-border-radius: 0 0 15px 15px;
+  -webkit-transition: ease-in-out all .5s;
+  -moz-transition: ease-in-out all .5s;
+  -ms-transition: ease-in-out all .5s;
+  -o-transition: ease-in-out all .5s;
 }
 
 body header {

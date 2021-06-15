@@ -10,7 +10,7 @@
             width: 0;
             height: 100%;
             background: linear-gradient(red, orange);
-            box-shadow: 0 3px 7px rgb(255, 91, 91);
+            box-shadow: 0 3px 7px rgb(255, 139, 139);
         }
     }
     
@@ -63,14 +63,22 @@
     }
     
     @mixin sticky {
-        background-color: rgba(255, 232, 232, 0.836);
-        border-radius: 0 0 30px 30px;
-        padding: 10px 40px;
+        background-color: rgba(255, 255, 255, 0.877);
+        border-radius: 0 0 15px 15px;
+        padding: 20px 25px;
         position: fixed;
         top: 0;
         left: 0;
         z-index: 1;
-        transition: ease all .5s;
+        transition: ease-in-out all .5s;
+        -webkit-border-radius: 0 0 15px 15px;
+        -moz-border-radius: 0 0 15px 15px;
+        -ms-border-radius: 0 0 15px 15px;
+        -o-border-radius: 0 0 15px 15px;
+        -webkit-transition: ease-in-out all .5s;
+        -moz-transition: ease-in-out all .5s;
+        -ms-transition: ease-in-out all .5s;
+        -o-transition: ease-in-out all .5s;
     }
     
     * {
@@ -79,6 +87,11 @@
         font-family: 'Roboto', sans-serif;
     }
     /* -------------------- start the coding . . .*/
+    
+    html,
+    body {
+        scroll-behavior: smooth;
+    }
     
     body {
         /* --------------- container for all header for responsive */
@@ -104,7 +117,7 @@
                     height: 15px;
                     border-radius: 10px;
                     margin: 10px auto;
-                    box-shadow: 1px 5px 5px #ff6d6d98;
+                    box-shadow: 1px 5px 5px rgb(255, 193, 101);
                     background-color: rgb(224, 0, 0);
                     -webkit-animation: loading 1s linear infinite;
                     animation: loading 1s linear infinite;
@@ -146,6 +159,7 @@
                 transition: ease all .5s;
                 .navbar {
                     transition: ease all .5s;
+                    padding: 0;
                     /* ----------------- navbar */
                     .navbar-brand {
                         color: rgba(0, 0, 0, .9);
@@ -163,12 +177,10 @@
                             margin: 0 100px;
                             text-align: center;
                             .nav-item {
-                                margin: 0 3px;
+                                margin: 0 2px;
                                 .nav-link {
+                                    padding: 10px 15px;
                                     font-weight: 500;
-                                    margin: 0 3px;
-                                    border-radius: 0;
-                                    border-bottom: 2px;
                                     transition: ease all .5s;
                                     &:hover {
                                         color: #e60202;
@@ -176,9 +188,13 @@
                                     }
                                 }
                                 .active {
-                                    color: #e60202;
-                                    border-bottom: 2px solid red;
-                                    transition: ease all .5s;
+                                    background: rgb(255, 65, 65);
+                                    color: white;
+                                    transition: ease-in all .5s;
+                                    -webkit-transition: ease-in all .5s;
+                                    -moz-transition: ease-in all .5s;
+                                    -ms-transition: ease-in all .5s;
+                                    -o-transition: ease-in all .5s;
                                 }
                             }
                         }
