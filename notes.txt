@@ -1,10 +1,6 @@
 ------------------ notes -----------------------
 |
 |
-|   - add a persian languege in web --> wait . . .
-|
-|   - add a Dark mode in web --> wait ...
-|
 |   - Linked navbar item in web --> wait . . .
 |
 |   - added auto code prefixer in vscode --> Done .
