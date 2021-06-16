@@ -542,7 +542,6 @@ body main .timer .container .row {
 }
 
 body main .timer .container .row .baner {
-  position: relative;
   padding: 0;
 }
 
@@ -555,12 +554,12 @@ body main .timer .container .row .baner img {
 }
 
 body main .timer .container .row .timer-item {
+  position: absolute;
+  right: 5%;
+  top: 20%;
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
-  position: absolute;
-  bottom: 30px;
-  right: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -626,6 +625,35 @@ body main .timer .container .row .timer-item #countdown ul li span {
   color: black;
 }
 
+body main .red-icon-cards {
+  margin-top: 100px;
+}
+
+body main .red-icon-cards .row .col .card {
+  padding: 5px;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.116);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.116);
+  -webkit-transition: ease-out all .5s;
+  transition: ease-out all .5s;
+}
+
+body main .red-icon-cards .row .col .card:hover {
+  cursor: pointer;
+  transform: translateY(-20px);
+  transition: ease-out all .5s;
+  -webkit-box-shadow: 0 6px 5px rgba(0, 0, 0, 0.37);
+          box-shadow: 0 6px 5px rgba(0, 0, 0, 0.37);
+  -webkit-transition: ease-out all .5s;
+  -moz-transition: ease-out all .5s;
+  -ms-transition: ease-out all .5s;
+  -o-transition: ease-out all .5s;
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -o-transform: translateY(-20px);
+}
+
 @media screen and (max-width: 520px) {
   body .container main .head {
     margin: 100px 0 0 0;
@@ -633,14 +661,22 @@ body main .timer .container .row .timer-item #countdown ul li span {
 }
 
 @media all and (max-width: 768px) {
-  body main .timer .row h1 {
-    font-size: 1.5rem;
+  body main .timer .container .row .text h3 {
+    font-size: smaller;
   }
-  body main .timer .row #countdown ul li {
+  body main .timer .container .row .text h1 {
+    font-size: larger;
+  }
+  body main .timer .container .row .text p {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  body main .timer .container .row #countdown ul li {
     font-size: 1.125rem;
     padding: .75rem;
   }
-  body main .timer .row #countdown ul li span {
+  body main .timer .container .row #countdown ul li span {
     font-size: 3.375rem;
   }
 }

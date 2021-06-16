@@ -451,7 +451,6 @@ body {
                 .row {
                     position: relative;
                     .baner {
-                        position: relative;
                         padding: 0;
                         img {
                             padding: 0;
@@ -461,10 +460,10 @@ body {
                         }
                     }
                     .timer-item {
-                        width: min-content;
                         position: absolute;
-                        bottom: 30px;
-                        right: 15px;
+                        right: 5%;
+                        top: 20%;
+                        width: min-content;
                         display: flex;
                         flex-direction: column;
                         justify-content: flex-start;
@@ -510,6 +509,38 @@ body {
                 }
             }
         }
+        .red-icon-cards {
+            margin-top: 100px;
+            .row {
+                .col {
+                    .card {
+                        padding: 5px;
+                        border-radius: 30px;
+                        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.116);
+                        transition: ease-out all .5s;
+                        &:hover {
+                            cursor: pointer;
+                            transform: translateY(-20px);
+                            transition: ease-out all .5s;
+                            box-shadow: 0 6px 5px rgba(0, 0, 0, 0.37);
+                            -webkit-transition: ease-out all .5s;
+                            -moz-transition: ease-out all .5s;
+                            -ms-transition: ease-out all .5s;
+                            -o-transition: ease-out all .5s;
+                            -webkit-transform: translateY(-20px);
+                            -moz-transform: translateY(-20px);
+                            -ms-transform: translateY(-20px);
+                            -o-transform: translateY(-20px);
+                        }
+                        img {}
+                        .card-body {
+                            h5 {}
+                            p {}
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -531,17 +562,27 @@ body {
     body {
         main {
             .timer {
-                .row {
-                    h1 {
-                        font-size: 1.5rem;
-                    }
-                    #countdown {
-                        ul {
-                            li {
-                                font-size: 1.125rem;
-                                padding: .75rem;
-                                span {
-                                    font-size: 3.375rem;
+                .container {
+                    .row {
+                        .text {
+                            h3 {
+                                font-size: smaller;
+                            }
+                            h1 {
+                                font-size: larger;
+                            }
+                            p {
+                                width: max-content;
+                            }
+                        }
+                        #countdown {
+                            ul {
+                                li {
+                                    font-size: 1.125rem;
+                                    padding: .75rem;
+                                    span {
+                                        font-size: 3.375rem;
+                                    }
                                 }
                             }
                         }
