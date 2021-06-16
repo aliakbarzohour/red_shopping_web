@@ -118,7 +118,7 @@ body .container .row {
 body .container .row .navbar {
   -webkit-transition: ease all .5s;
   transition: ease all .5s;
-  padding: 0;
+  padding: 10px;
   /* ----------------- navbar */
 }
 
@@ -412,10 +412,6 @@ body main .trendig .row .col .card {
 }
 
 body main .trendig .row .col .card:hover {
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
   cursor: pointer;
   transform: scale(1.05);
   transition: ease all .4s;
@@ -524,9 +520,128 @@ body main .trendig .row .col .card .new ::before {
   right: 15px;
 }
 
+body main .timer {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .timer .container .row {
+  position: relative;
+}
+
+body main .timer .container .row .baner {
+  position: relative;
+  padding: 0;
+}
+
+body main .timer .container .row .baner img {
+  padding: 0;
+  width: 100%;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.404);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.404);
+}
+
+body main .timer .container .row .timer-item {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  position: absolute;
+  bottom: 30px;
+  right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .timer .container .row .timer-item .text {
+  direction: ltr;
+}
+
+body main .timer .container .row .timer-item .text h3 {
+  color: red;
+  font-size: 20px;
+}
+
+body main .timer .container .row .timer-item .text h1 {
+  color: black;
+  font-family: "Changa One", cursive;
+  font-size: 40px;
+}
+
+body main .timer .container .row .timer-item #countdown ul {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .timer .container .row .timer-item #countdown ul li {
+  width: 100px;
+  height: 100px;
+  list-style: none;
+  padding: 1em;
+  text-transform: uppercase;
+  background: white;
+  border-radius: 50%;
+  text-align: center;
+  margin: 10px;
+}
+
+body main .timer .container .row .timer-item #countdown ul li span {
+  display: block;
+  font-size: 30px;
+  color: black;
+}
+
 @media screen and (max-width: 520px) {
   body .container main .head {
     margin: 100px 0 0 0;
+  }
+}
+
+@media all and (max-width: 768px) {
+  body main .timer .row h1 {
+    font-size: 1.5rem;
+  }
+  body main .timer .row #countdown ul li {
+    font-size: 1.125rem;
+    padding: .75rem;
+  }
+  body main .timer .row #countdown ul li span {
+    font-size: 3.375rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
