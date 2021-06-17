@@ -654,6 +654,17 @@ body main .red-icon-cards .row .col .card:hover {
   -o-transform: translateY(-20px);
 }
 
+body main .red-icon-cards .row .col .card i {
+  color: #ff2424;
+  font-size: -webkit-xxx-large;
+  text-align: center;
+}
+
+body main .red-icon-cards .row .col .card .card-body {
+  text-align: center;
+  padding-top: 0;
+}
+
 @media screen and (max-width: 520px) {
   body .container main .head {
     margin: 100px 0 0 0;

@@ -532,8 +532,14 @@ body {
                             -ms-transform: translateY(-20px);
                             -o-transform: translateY(-20px);
                         }
-                        img {}
+                        i {
+                            color: #ff2424;
+                            font-size: -webkit-xxx-large;
+                            text-align: center;
+                        }
                         .card-body {
+                            text-align: center;
+                            padding-top: 0;
                             h5 {}
                             p {}
                         }
