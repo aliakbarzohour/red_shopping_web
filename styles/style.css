@@ -119,6 +119,7 @@ body .container .row .navbar {
   -webkit-transition: ease all .5s;
   transition: ease all .5s;
   padding: 10px;
+  text-align: center;
   /* ----------------- navbar */
 }
 
@@ -142,6 +143,7 @@ body .container .row .navbar .collapse .navbar-nav .nav-item {
 }
 
 body .container .row .navbar .collapse .navbar-nav .nav-item .nav-link {
+  text-align: center;
   padding: 10px 15px;
   font-weight: 500;
   -webkit-transition: ease all .5s;
@@ -157,11 +159,16 @@ body .container .row .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
 body .container .row .navbar .collapse .navbar-nav .nav-item .active {
   background: #ff4141;
   color: white;
+  border-radius: 10px;
   transition: ease-in all .5s;
   -webkit-transition: ease-in all .5s;
   -moz-transition: ease-in all .5s;
   -ms-transition: ease-in all .5s;
   -o-transition: ease-in all .5s;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 body .container .row .navbar .icons a {

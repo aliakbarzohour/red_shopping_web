@@ -162,6 +162,7 @@ body {
             .navbar {
                 transition: ease all .5s;
                 padding: 10px;
+                text-align: center;
                 /* ----------------- navbar */
                 .navbar-brand {
                     color: rgba(0, 0, 0, .9);
@@ -176,6 +177,7 @@ body {
                         .nav-item {
                             margin: 0 2px;
                             .nav-link {
+                                text-align: center;
                                 padding: 10px 15px;
                                 font-weight: 500;
                                 transition: ease all .5s;
@@ -187,11 +189,16 @@ body {
                             .active {
                                 background: rgb(255, 65, 65);
                                 color: white;
+                                border-radius: 10px;
                                 transition: ease-in all .5s;
                                 -webkit-transition: ease-in all .5s;
                                 -moz-transition: ease-in all .5s;
                                 -ms-transition: ease-in all .5s;
                                 -o-transition: ease-in all .5s;
+                                -webkit-border-radius: 10px;
+                                -moz-border-radius: 10px;
+                                -ms-border-radius: 10px;
+                                -o-border-radius: 10px;
                             }
                         }
                     }
