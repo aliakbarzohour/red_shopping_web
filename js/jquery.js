@@ -7,7 +7,6 @@ $(document).ready(() => {
         let scrollpos = $(window).scrollTop();
         let scrollpersent = (scrollpos / viewport) * 50;
         console.log(scrollpersent);
-
         $(".indicator").css("width", scrollpersent + "%");
     });
 });

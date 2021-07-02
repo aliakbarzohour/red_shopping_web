@@ -456,25 +456,24 @@ body {
             align-items: center;
             .container {
                 .row {
-                    position: relative;
-                    .baner {
-                        padding: 0;
-                        img {
-                            padding: 0;
-                            width: 100%;
-                            border-radius: 30px;
-                            box-shadow: 0 3px 4px rgba(0, 0, 0, 0.404);
-                        }
-                    }
+                    background-image: url(../media/baner/1.jpg);
+                    background-position: top;
+                    background-size: cover;
+                    padding: 50px;
+                    border-radius: 30px;
+                    -webkit-border-radius: 30px;
+                    -moz-border-radius: 30px;
+                    -ms-border-radius: 30px;
+                    -o-border-radius: 30px;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
                     .timer-item {
-                        position: absolute;
-                        right: 5%;
-                        top: 20%;
-                        width: min-content;
+                        width: 60%;
                         display: flex;
                         flex-direction: column;
-                        justify-content: flex-start;
-                        align-items: center;
+                        justify-content: center;
+                        align-items: flex-start;
                         .text {
                             direction: ltr;
                             h3 {
@@ -485,6 +484,9 @@ body {
                                 color: black;
                                 font-family: "Changa One", cursive;
                                 font-size: 40px;
+                            }
+                            p {
+                                width: auto;
                             }
                         }
                         #countdown {
@@ -571,30 +573,48 @@ body {
 }
 
 // this is a media query for timer 
-@media all and (max-width: 768px) {
+@media screen and (max-width: 550px) {
     body {
-        main {
-            .timer {
-                .container {
-                    .row {
-                        .text {
-                            h3 {
-                                font-size: smaller;
-                            }
-                            h1 {
-                                font-size: larger;
-                            }
-                            p {
-                                width: max-content;
-                            }
-                        }
-                        #countdown {
-                            ul {
-                                li {
-                                    font-size: 1.125rem;
-                                    padding: .75rem;
-                                    span {
-                                        font-size: 3.375rem;
+        .container {
+            main {
+                .timer {
+                    width: 100%;
+                    .container {
+                        .row {
+                            background-position: left;
+                            width: 100%;
+                            padding: 0;
+                            justify-content: flex-start;
+                            .timer-item {
+                                width: 100%;
+                                .text {
+                                    padding: 15px;
+                                    width: 100%;
+                                    text-align: center;
+                                    justify-content: center;
+                                    h3 {
+                                        font-size: 20px;
+                                    }
+                                    h1 {
+                                        font-size: 30px;
+                                    }
+                                }
+                                #countdown {
+                                    ul {
+                                        padding: 0;
+                                        display: flex;
+                                        flex-direction: row;
+                                        justify-content: flex-end;
+                                        align-items: center;
+                                        li {
+                                            width: 80px;
+                                            height: 80px;
+                                            span {
+                                                display: block;
+                                                font-size: 20px;
+                                                color: black;
+                                            }
+                                        }
                                     }
                                 }
                             }

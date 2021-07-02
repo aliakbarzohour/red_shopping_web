@@ -545,28 +545,28 @@ body main .timer {
 }
 
 body main .timer .container .row {
-  position: relative;
-}
-
-body main .timer .container .row .baner {
-  padding: 0;
-}
-
-body main .timer .container .row .baner img {
-  padding: 0;
-  width: 100%;
+  background-image: url(../media/baner/1.jpg);
+  background-position: top;
+  background-size: cover;
+  padding: 50px;
   border-radius: 30px;
-  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.404);
-          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.404);
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body main .timer .container .row .timer-item {
-  position: absolute;
-  right: 5%;
-  top: 20%;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -574,12 +574,12 @@ body main .timer .container .row .timer-item {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 body main .timer .container .row .timer-item .text {
@@ -595,6 +595,10 @@ body main .timer .container .row .timer-item .text h1 {
   color: black;
   font-family: "Changa One", cursive;
   font-size: 40px;
+}
+
+body main .timer .container .row .timer-item .text p {
+  width: auto;
 }
 
 body main .timer .container .row .timer-item #countdown ul {
@@ -678,24 +682,59 @@ body main .red-icon-cards .row .col .card .card-body {
   }
 }
 
-@media all and (max-width: 768px) {
-  body main .timer .container .row .text h3 {
-    font-size: smaller;
+@media screen and (max-width: 550px) {
+  body .container main .timer {
+    width: 100%;
   }
-  body main .timer .container .row .text h1 {
-    font-size: larger;
+  body .container main .timer .container .row {
+    background-position: left;
+    width: 100%;
+    padding: 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
-  body main .timer .container .row .text p {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
+  body .container main .timer .container .row .timer-item {
+    width: 100%;
   }
-  body main .timer .container .row #countdown ul li {
-    font-size: 1.125rem;
-    padding: .75rem;
+  body .container main .timer .container .row .timer-item .text {
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  body main .timer .container .row #countdown ul li span {
-    font-size: 3.375rem;
+  body .container main .timer .container .row .timer-item .text h3 {
+    font-size: 20px;
+  }
+  body .container main .timer .container .row .timer-item .text h1 {
+    font-size: 30px;
+  }
+  body .container main .timer .container .row .timer-item #countdown ul {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .container main .timer .container .row .timer-item #countdown ul li {
+    width: 80px;
+    height: 80px;
+  }
+  body .container main .timer .container .row .timer-item #countdown ul li span {
+    display: block;
+    font-size: 20px;
+    color: black;
   }
 }
 /*# sourceMappingURL=style.css.map */
