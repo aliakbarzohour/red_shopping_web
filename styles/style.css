@@ -720,9 +720,63 @@ body main .container .row .blog .news_blog .row .col .card .card-body p {
   font-weight: bold;
 }
 
+body main .container .row .blog .logo {
+  margin-top: 100px;
+}
+
+body main .container .row .blog .logo .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .container .row .blog .logo .row .col img {
+  width: 200px;
+  filter: grayscale(80%);
+  -webkit-filter: grayscale(90%);
+  transition: ease all .4s;
+  -webkit-transition: ease all .4s;
+  -moz-transition: ease all .4s;
+  -ms-transition: ease all .4s;
+  -o-transition: ease all .4s;
+}
+
+body main .container .row .blog .logo .row .col img:hover {
+  cursor: pointer;
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+  transition: ease all .4s;
+  -webkit-transition: ease all .4s;
+  -moz-transition: ease all .4s;
+  -ms-transition: ease all .4s;
+  -o-transition: ease all .4s;
+}
+
 @media screen and (max-width: 520px) {
   body .container main .head {
     margin: 100px 0 0 0;
+  }
+  body .container main .logo .row .col img {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body .container main .logo .row {
+    padding-left: 100px;
+  }
+  body .container main .logo .row .col img {
+    margin: auto;
   }
 }
 
@@ -787,7 +841,7 @@ body main .container .row .blog .news_blog .row .col .card .card-body p {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 415px) {
   body .container main .timer {
     width: 100%;
   }
@@ -841,6 +895,12 @@ body main .container .row .blog .news_blog .row .col .card .card-body p {
     display: block;
     font-size: 10px;
     color: black;
+  }
+  body .container main .logo .row {
+    padding-left: 10px;
+  }
+  body .container main .logo .row .col img {
+    margin: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */

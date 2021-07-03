@@ -606,6 +606,37 @@ body {
                             }
                         }
                     }
+                    .logo {
+                        margin-top: 100px;
+                        .row {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: center;
+                            .col {
+                                img {
+                                    width: 200px;
+                                    filter: grayscale(80%);
+                                    -webkit-filter: grayscale(90%);
+                                    transition: ease all .4s;
+                                    -webkit-transition: ease all .4s;
+                                    -moz-transition: ease all .4s;
+                                    -ms-transition: ease all .4s;
+                                    -o-transition: ease all .4s;
+                                    &:hover {
+                                        cursor: pointer;
+                                        filter: grayscale(0);
+                                        -webkit-filter: grayscale(0);
+                                        transition: ease all .4s;
+                                        -webkit-transition: ease all .4s;
+                                        -moz-transition: ease all .4s;
+                                        -ms-transition: ease all .4s;
+                                        -o-transition: ease all .4s;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -620,6 +651,34 @@ body {
             main {
                 .head {
                     margin: 100px 0 0 0;
+                }
+                .logo {
+                    .row {
+                        .col {
+                            img {
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    body {
+        .container {
+            main {
+                .logo {
+                    .row {
+                        padding-left: 100px;
+                        .col {
+                            img {
+                                margin: auto;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -682,7 +741,7 @@ body {
 }
 
 // this is a media query for timer 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 415px) {
     body {
         .container {
             main {
@@ -727,6 +786,16 @@ body {
                                         }
                                     }
                                 }
+                            }
+                        }
+                    }
+                }
+                .logo {
+                    .row {
+                        padding-left: 10px;
+                        .col {
+                            img {
+                                margin: auto;
                             }
                         }
                     }
