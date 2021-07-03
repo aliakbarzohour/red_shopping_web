@@ -682,7 +682,7 @@ body main .red-icon-cards .row .col .card .card-body {
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 995px) {
   body .container main .timer {
     width: 100%;
   }
@@ -690,9 +690,70 @@ body main .red-icon-cards .row .col .card .card-body {
     background-position: left;
     width: 100%;
     padding: 0;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .container main .timer .container .row .timer-item {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .container main .timer .container .row .timer-item .text {
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .container main .timer .container .row .timer-item .text h3 {
+    font-size: 20px;
+  }
+  body .container main .timer .container .row .timer-item .text h1 {
+    font-size: 30px;
+  }
+  body .container main .timer .container .row .timer-item #countdown ul {
+    padding: 0 10px 0 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .container main .timer .container .row .timer-item #countdown ul li {
+    width: 80px;
+    height: 85px;
+    font-size: 15px;
+  }
+  body .container main .timer .container .row .timer-item #countdown ul li span {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body .container main .timer {
+    width: 100%;
+  }
+  body .container main .timer .container .row {
+    background-position: left;
+    width: 100%;
+    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   body .container main .timer .container .row .timer-item {
     width: 100%;
@@ -712,7 +773,7 @@ body main .red-icon-cards .row .col .card .card-body {
     font-size: 30px;
   }
   body .container main .timer .container .row .timer-item #countdown ul {
-    padding: 0;
+    padding: 0 10px 0 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -728,12 +789,13 @@ body main .red-icon-cards .row .col .card .card-body {
             align-items: center;
   }
   body .container main .timer .container .row .timer-item #countdown ul li {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
+    font-size: 7px;
   }
   body .container main .timer .container .row .timer-item #countdown ul li span {
     display: block;
-    font-size: 20px;
+    font-size: 10px;
     color: black;
   }
 }

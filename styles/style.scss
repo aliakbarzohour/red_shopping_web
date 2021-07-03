@@ -572,8 +572,8 @@ body {
     }
 }
 
-// this is a media query for timer 
-@media screen and (max-width: 550px) {
+// this is a media query for timer in tablet mode . . .
+@media screen and (max-width: 995px) {
     body {
         .container {
             main {
@@ -584,7 +584,62 @@ body {
                             background-position: left;
                             width: 100%;
                             padding: 0;
-                            justify-content: flex-start;
+                            justify-content: center;
+                            .timer-item {
+                                width: 100%;
+                                justify-content: center;
+                                align-items: center;
+                                .text {
+                                    padding: 15px;
+                                    width: 100%;
+                                    text-align: center;
+                                    justify-content: center;
+                                    h3 {
+                                        font-size: 20px;
+                                    }
+                                    h1 {
+                                        font-size: 30px;
+                                    }
+                                }
+                                #countdown {
+                                    ul {
+                                        padding: 0 10px 0 20px;
+                                        display: flex;
+                                        flex-direction: row;
+                                        justify-content: flex-end;
+                                        align-items: center;
+                                        li {
+                                            width: 80px;
+                                            height: 85px;
+                                            font-size: 15px;
+                                            span {
+                                                font-size: 25px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// this is a media query for timer 
+@media screen and (max-width: 400px) {
+    body {
+        .container {
+            main {
+                .timer {
+                    width: 100%;
+                    .container {
+                        .row {
+                            background-position: left;
+                            width: 100%;
+                            padding: 0;
+                            justify-content: center;
                             .timer-item {
                                 width: 100%;
                                 .text {
@@ -601,17 +656,18 @@ body {
                                 }
                                 #countdown {
                                     ul {
-                                        padding: 0;
+                                        padding: 0 10px 0 20px;
                                         display: flex;
                                         flex-direction: row;
                                         justify-content: flex-end;
                                         align-items: center;
                                         li {
-                                            width: 80px;
-                                            height: 80px;
+                                            width: 50px;
+                                            height: 50px;
+                                            font-size: 7px;
                                             span {
                                                 display: block;
-                                                font-size: 20px;
+                                                font-size: 10px;
                                                 color: black;
                                             }
                                         }
