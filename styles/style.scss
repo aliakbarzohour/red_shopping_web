@@ -81,6 +81,14 @@
     -o-transition: ease-in-out all .5s;
 }
 
+// flex column
+@mixin flex_column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -549,13 +557,59 @@ body {
                         .card-body {
                             text-align: center;
                             padding-top: 0;
-                            h5 {}
-                            p {}
                         }
                     }
                 }
             }
         }
+        .container {
+            margin: 100px 0 0 0;
+            .row {
+                .blog {
+                    @includeflex_column(): ;
+                    padding: 60px;
+                    background-color: rgb(231, 231, 231);
+                    border-radius: 13px;
+                    -webkit-border-radius: 13px;
+                    -moz-border-radius: 13px;
+                    -ms-border-radius: 13px;
+                    -o-border-radius: 13px;
+                    .titr {
+                        text-align: center;
+                        margin-bottom: 20px;
+                    }
+                    .news_blog {
+                        .row {
+                            .col {
+                                .card {
+                                    img {
+                                        border-radius: 15px 15px 0 0;
+                                        -webkit-border-radius: 15px 15px 0 0;
+                                        -moz-border-radius: 15px 15px 0 0;
+                                        -ms-border-radius: 15px 15px 0 0;
+                                        -o-border-radius: 15px 15px 0 0;
+                                    }
+                                    .card-body {
+                                        border-radius: 0 0 5px 5px;
+                                        -webkit-border-radius: 0 0 5px 5px;
+                                        -moz-border-radius: 0 0 5px 5px;
+                                        -ms-border-radius: 0 0 5px 5px;
+                                        -o-border-radius: 0 0 5px 5px;
+                                        h5 {
+                                            color: rgb(230, 61, 61);
+                                        }
+                                        p {
+                                            font-weight: bold;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // coding main web --------------
     }
 }
 
