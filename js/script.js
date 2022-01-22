@@ -1,3 +1,8 @@
+window.addEventListener("scroll", function() {
+    const parallax = document.querySelector("img");
+    let scrollP = window.pageYOffset;
+    parallax.style.transform = 'translateY(' + scrollP * .3 + 'px)';
+})
 // coding loading screen ----------> 
 window.addEventListener("load", function() {
     document.querySelector(".loader-container").classList.add("loaded");
