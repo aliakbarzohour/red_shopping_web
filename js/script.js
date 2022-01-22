@@ -1,7 +1,8 @@
+// codign parallax effect
 window.addEventListener("scroll", function() {
     const parallax = document.querySelector("img");
     let scrollP = window.pageYOffset;
-    parallax.style.transform = 'translateY(' + scrollP * .3 + 'px)';
+    parallax.style.transform = 'translateY(' + scrollP * .2 + 'px)';
 })
 // coding loading screen ----------> 
 window.addEventListener("load", function() {
