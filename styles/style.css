@@ -18,6 +18,7 @@ body .loader-container {
   position: absolute;
   z-index: 10;
   width: 100%;
+  over-flow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
