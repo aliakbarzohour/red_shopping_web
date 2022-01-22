@@ -1,8 +1,6 @@
 // codign parallax effect
 window.addEventListener("scroll", function() {
-    const parallax = document.querySelector("img");
-    let scrollP = window.pageYOffset;
-    parallax.style.transform = 'translateY(' + scrollP * .2 + 'px)';
+  
 })
 // coding loading screen ----------> 
 window.addEventListener("load", function() {
@@ -10,8 +8,14 @@ window.addEventListener("load", function() {
 });
 // coding sticky navbar --------> 
 window.addEventListener("scroll", function() {
+    // vaariable for parallax effect
+    const parallax = document.querySelector("img");
+    let scrollP = window.pageYOffset;
+    // sticky navbar 
     let sticky = document.querySelector(".navbar");
     sticky.classList.toggle("sticky", window.scrollY > 0);
+    // parallax effect 
+    parallax.style.transform = 'translateY(' + scrollP * .2 + 'px)';
 });
 // timer 
 (function() {
@@ -20,7 +24,7 @@ window.addEventListener("scroll", function() {
         hour = minute * 60,
         day = hour * 24;
 
-    let birthday = "Sep 30, 2021 00:00:00",
+    let birthday = "Sep 30, 2023 00:00:00",
         countDown = new Date(birthday).getTime(),
         x = setInterval(function() {
 
